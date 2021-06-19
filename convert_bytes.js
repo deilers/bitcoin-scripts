@@ -1,7 +1,14 @@
-import { bytes } from 'bytes';
-import * as block from './blockchaininfo.json';
+const block = require('./blockchaininfo.json');
+const bytes = require('bytes');
 
-let diskSize = block.size_on_disk;
-let readableSize = bytes(diskSize);
+let { 
+    size_on_disk,
+    prune_target_size
+} = block;
 
-console.log(`Size on disk: ${readableSize}`);
+
+let readableDiskSize = bytes(size_on_disk);
+let readableTargetSize = bytes(prune_target_size);
+
+console.log(`Size on disk: ${readableDiskSize}`);
+console.log(`Prune Target Size: ${readableTargetSize}`);
