@@ -1,0 +1,1 @@
+/usr/local/bin/bitcoin-cli getblockchaininfo > blockchaininfo.json

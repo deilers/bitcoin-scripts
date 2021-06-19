@@ -1,0 +1,1 @@
+/usr/local/bin/bitcoin-cli getnetworkinfo > networkinfo.json
