@@ -1,5 +1,5 @@
-const block = require('./blockchaininfo.json');
-const bytes = require('bytes');
+import block from '../data/blockchaininfo.json';
+import bytes from 'bytes';
 
 let { 
     size_on_disk,
